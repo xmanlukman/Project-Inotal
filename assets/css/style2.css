@@ -1,0 +1,391 @@
+.dashboard {
+  display: flex;
+  width: 100%;
+  padding: 20px;
+  padding-left: 100px;
+  align-items: flex-start;
+  justify-content: center;
+  position: relative;
+}
+.titleDashboard {
+  font-size: 30px;
+  color: #fff;
+  margin-bottom: 20px;
+}
+.menuSidebar {
+  width: 30%;
+  list-style: none;
+  margin-top: 30px;
+  position: sticky;
+  left: 100px;
+  top: 120px;
+}
+.menuSidebar li {
+  margin-bottom: 10px;
+}
+.menuSidebar li a {
+  display: block;
+  width: 200px;
+  text-decoration: none;
+  background-color: #03045e;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 10px;
+  opacity: 0.7;
+}
+.menuSidebar li a:hover {
+  opacity: 1;
+  border: 2px solid #fff;
+  box-shadow: -3px 3px 20px 4px #000;
+}
+.menuSidebar li .list.active {
+  border: 2px solid #fff;
+  box-shadow: -3px 3px 20px 4px #000;
+  opacity: 1;
+}
+.content {
+  width: 60%;
+  padding: 20px;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+}
+.boxBuku {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  border: 2px solid #fff;
+  border-radius: 10px;
+  padding: 10px;
+  text-decoration: none;
+  color: #fff;
+  margin-bottom: 20px;
+  transition: 0.5s;
+}
+.boxBuku:hover {
+  box-shadow: -6px 6px 20px #000;
+}
+.container .boxBuku .desc p {
+  font-size: 14px;
+  max-width: 500px;
+  text-align: left;
+  margin-bottom: 10px;
+}
+.container .boxBuku .desc .title {
+  font-size: 22px;
+  margin-bottom: 30px;
+}
+.container .boxBuku .desc {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  justify-content: space-between;
+}
+.container .boxBuku .poster {
+  width: 20%;
+}
+
+/* Profile */
+.boxProfile {
+  background: linear-gradient(152.97deg, rgba(21, 21, 21, 0.2) 0%, rgba(21, 21, 21, 0) 100%);
+  backdrop-filter: blur(42px);
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  box-shadow: -9px 8px 30px #000;
+  padding-bottom: 30px;
+}
+.boxProfile .profile img {
+  width: 100px;
+  height: 100px;
+}
+.boxProfile .name {
+  font-size: 30px;
+}
+.duaBox {
+  width: 60%;
+  display: flex;
+  justify-content: space-between;
+}
+.duaBox .btn_profile {
+  display: block;
+  width: 180px;
+  background-color: #03045e;
+  opacity: 0.7;
+  text-decoration: none;
+  color: #fff;
+  padding: 10px;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+.duaBox .btn_profile:hover {
+  opacity: 1;
+  border: 2px solid #fff;
+  box-shadow: -3px 3px 20px 4px #000;
+}
+
+/* admin */
+.tigaBox {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+.boxInfo {
+  width: 180px;
+  height: 180px;
+  background: linear-gradient(0deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)), #9ac1eb;
+  box-shadow: -10px 10px 10px rgba(0, 0, 0, 0.25);
+  border-radius: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.boxInfo img {
+  width: 80px;
+}
+.boxInfo h1 {
+  font-size: 30px;
+  font-weight: bold;
+  margin: 2px 0px;
+}
+.dFlex {
+  display: flex;
+  flex-direction: column;
+}
+.container .row {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 0px;
+}
+.container .row form {
+  margin-left: -50px;
+}
+.container .row input {
+  width: 100px;
+  padding: 6px;
+  border-radius: 10px;
+}
+.container .row .btn_new {
+  background: linear-gradient(0deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)), #9ac1eb;
+  box-shadow: -5px 5px 5px rgba(0, 0, 0, 0.25);
+  padding: 10px;
+  border-radius: 20px;
+  text-decoration: none;
+  color: #000;
+}
+
+.data_buku {
+  display: flex;
+  width: 100%;
+  margin-bottom: 10px;
+}
+.data_buku .box {
+  display: flex;
+  width: 80%;
+  background: linear-gradient(0deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)), #9ac1eb;
+  box-shadow: -5px 5px 5px rgba(0, 0, 0, 0.25);
+  border-radius: 50px;
+  padding: 10px 40px;
+  justify-content: space-between;
+  text-decoration: none;
+  color: #000;
+  opacity: 0.8;
+}
+.data_buku .box:hover {
+  box-shadow: -10px 10px 10px rgba(0, 0, 0, 0.25);
+  opacity: 1;
+}
+.data_buku .box .title {
+  max-width: 200px;
+  margin-right: 20px;
+}
+.data_buku .box p {
+  margin-right: 20px;
+}
+.data_buku .box .right {
+  display: flex;
+}
+.data_buku .action {
+  display: flex;
+}
+.data_buku .action a {
+  background: linear-gradient(0deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)), #9ac1eb;
+  box-shadow: -5px 5px 5px rgba(0, 0, 0, 0.25);
+  border-radius: 20px;
+  margin-left: 10px;
+  color: #000;
+  text-decoration: none;
+  /* width: 100px; */
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 10px;
+}
+
+.add{
+  background: linear-gradient(0deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)), #9ac1eb;
+  box-shadow: -5px 5px 5px rgba(0, 0, 0, 0.25);
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+.add label{
+  font-size: 16px;
+  font-weight: bold;
+  margin-top: 20px;
+  margin-bottom: 5px;
+}
+.addInput{
+  padding: 7px;
+  border-radius: 10px;
+  padding-left: 10px;
+  color: #000;
+}
+.add button{
+  display: flex;
+  width: 100px;
+  padding: 10px;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  border-radius: 20px;
+  background-color: #03045e;
+  border: 1px solid #fff;
+  color: #fff;
+  margin-top: 20px;
+}
+
+
+
+/* modal */
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(7px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.4s ease;
+  z-index: 999999;
+}
+
+.modal .modal-container {
+  width: 550px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 5px 10px 15px rgba(0, 0, 0, 0.2);
+  transition: 0.5s ease 0.3s;
+}
+
+.modal .modal-container .modal-header {
+  height: 20%;
+  border-bottom: 1px solid #aaaaaa;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.modal .modal-container .modal-header h2 {
+  font-size: 2rem;
+  padding-left: 3%;
+  color: #333;
+}
+
+.modal .modal-container .modal-header button {
+  width: 2.2rem;
+  height: 2.2rem;
+  border-radius: 50%;
+  margin-right: 15px;
+  background: transparent;
+  border: 2px solid #555;
+  color: #333;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.modal .modal-container .modal-header button:hover {
+  border: 2px solid #000;
+  color: #000;
+}
+
+.modal .modal-container .modal-content {
+  height: 80%;
+  padding: 3% 5%;
+}
+
+.modal .modal-container .modal-content p {
+  font-size: 17px;
+  line-height: 1.5;
+  color: #444;
+  margin: 0px 0px 10px;
+}
+.hide {
+  opacity: 0;
+  visibility: hidden;
+}
+
+
+
+@media screen and (max-width: 576px) {
+  .menuSidebar {
+    position: relative;
+    margin-top: 10px;
+    top: 0;
+  }
+  .dashboard {
+    padding: 10px;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .content {
+    width: 100%;
+  }
+  .boxBuku {
+    padding: 5px;
+  }
+  .container .boxBuku .desc {
+    max-width: 180px;
+    margin-right: -1px;
+  }
+  .container .boxBuku .desc p {
+    max-width: 180px;
+    font-size: 10px;
+  }
+  .container .boxBuku .desc .title {
+    font-size: 18px;
+  }
+  .container .boxBuku .poster img {
+    width: 100px;
+    height: 150px;
+  }
+  .container .tigaBox {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 20px;
+  }
+  .container .tigaBox .boxInfo {
+    width: 150px;
+    height: 150px;
+  }
+  .dFlex .data_buku .box .right{
+      display: none;
+  }
+  .duaBox{
+      width: 100%;
+  }
+  .duaBox .btn_profile{
+      width: 120px;
+  }
+}

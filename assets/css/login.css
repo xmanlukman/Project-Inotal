@@ -1,0 +1,91 @@
+.login{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 30px 100px 60px 100px;
+    background-color: #9AC1EB;
+}
+.boxLogin{
+    height: 100%;
+    width: 100%;
+    background-color: #D4E7FB;
+    box-shadow: 25px 25px 0px 0px #0244A7;
+    padding: 40px;
+}
+.headingGroup{
+    display: flex;
+    justify-content: center;
+}
+.headingLogin{
+    padding: 10px 50px;
+    text-decoration: none;
+    color: #fff;
+    background-color: #9AC1EB;
+    border: 2px solid #fff;
+}
+.boxLogin h1{
+    text-align: center;
+    margin: 20px 0px;
+}
+.headingRegister{
+    text-decoration: none;
+    padding: 10px 50px;
+    color: #fff;
+    background-color: #9AC1EB;
+    border: 2px solid #fff;
+}
+.headingLogin:hover,
+.headingRegister:hover{
+    opacity: 0.7;
+}
+.active{
+    background-color: #0244A7;
+    transform: translateY(-10px);
+}
+.boxLogin form{
+    display: flex;
+    flex-direction: column;
+    margin: 0px 100px;
+}
+.boxLogin form input{
+    padding: 10px 40px;
+    margin-bottom: 10px;
+    background-color: #9AC1EB;
+    color: #0244A7;
+    border: 2px solid #fff;
+}
+.btn_submit{
+    padding: 10px;
+    width: 200px;
+    margin: auto;
+    background-color: #0244A7;
+    border: 2px solid #fff;
+    color: #fff;
+    margin-top: 20px;
+}
+.btn_submit:hover{
+    cursor: pointer;
+    opacity: 0.8;
+}
+.boxLogin p{
+    text-align: center;
+    margin-top: 20px;
+}
+
+
+@media screen and (max-width: 576px) {
+.login{
+    padding: 10px 10px 40px 10px;
+}
+.boxLogin{
+    padding: 30px;
+}
+.headingLogin,
+.headingRegister{
+    padding: 5px 30px;
+}
+.boxLogin form{
+    margin: 10px;
+}
+}
